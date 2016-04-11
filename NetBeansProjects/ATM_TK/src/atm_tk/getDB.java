@@ -9,7 +9,7 @@ public class getDB {
     static storeData storedata;
     public getDB() {
         db = new CSDbDelegate
-                    ("cs14sitkmutt.me","3306","CSC105_G4","CSC105_G4","CSC105_G4");
+                    ("csprong-in.sit.kmutt.ac.th","3306","CSC105_G4","CSC105_2014","csc105");
         db.connect();
     }
     public String checkPassword(String user , String password){
@@ -35,6 +35,7 @@ public class getDB {
         }
         return output;
     }
+    
     public static void statementStoreNo() {
         String sql_stat = "SELECT * FROM `ATM_Statement` ";
         ArrayList<HashMap> list = db.queryRows(sql_stat);
