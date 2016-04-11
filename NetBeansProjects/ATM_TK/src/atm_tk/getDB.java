@@ -36,6 +36,9 @@ public class getDB {
         return output;
     }
     
+    
+    
+    
     public static void statementStoreNo() {
         String sql_stat = "SELECT * FROM `ATM_Statement` ";
         ArrayList<HashMap> list = db.queryRows(sql_stat);
