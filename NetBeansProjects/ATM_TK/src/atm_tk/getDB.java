@@ -4,15 +4,18 @@ import edu.sit.cs.db.CSDbDelegate;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class getDB {
+public class getDB 
+{
     static CSDbDelegate db;
     static storeData storedata;
-    public getDB() {
-        db = new CSDbDelegate
-                    ("csprong-in.sit.kmutt.ac.th","3306","CSC105_G4","CSC105_2014","csc105");
+    public getDB() 
+    {
+        db = new CSDbDelegate ("csprog-in.sit.kmutt.ac.th","3306","CSC105_G4","csc105_2014","csc105");
         db.connect();
+
     }
-    public String checkPassword(String user , String password){
+    public String checkPassword(String user , String password)
+    {
         String output = "";
         String sql = "SELECT * FROM `ATM_Customer` ";
         ArrayList<HashMap> list = db.queryRows(sql);
@@ -35,28 +38,31 @@ public class getDB {
         }
         return output;
     }
-    // I want to change this
-    
-    
-    
-    public static void statementStoreNo() {
+    public static void statementStoreNo() 
+    {
         String sql_stat = "SELECT * FROM `ATM_Statement` ";
         ArrayList<HashMap> list = db.queryRows(sql_stat);
-        for(HashMap l : list) {
+        for(HashMap l : list) 
+        {
             storeData.stateMe(""+l.get("Statement_No")); 
         }
     }
+    
     // ยังค้างส่วนนี้
-    public static void statementStoreNo_Each() {
+    public static void statementStoreNo_Each() 
+    {
         String sql_stat = "SELECT * FROM `ATM_Statement` ";
         ArrayList<HashMap> list = db.queryRows(sql_stat);
         if(storeData.no_each == "0") {
           storeData.no_each = "0";
         }   
         int tmp = Integer.parseInt(storeData.no_each);
-        for(HashMap l : list) {
-            if(l.get("Customer_ID").equals(storeData.user)) {
-               if( tmp < Integer.parseInt((String) l.get("Statement_No"))) {
+        for(HashMap l : list) 
+        {
+            if(l.get("Customer_ID").equals(storeData.user)) 
+            {
+               if( tmp < Integer.parseInt((String) l.get("Statement_No"))) 
+               {
                   storeData.stateMe_Each(""+l.get("Statement_No"));
                   storeData.moAndMou(""+l.get("Mode"),""+l.get("Money"));
                   storeData.cnt++;
@@ -67,13 +73,15 @@ public class getDB {
             }
         }
     }
-    public static void updateDB() {
+    public static void updateDB() 
+    {
         String sql_up = "UPDATE `ATM_Customer` "
                 + "SET Customer_Balance= '"+storeData.balance+"'"
                 + "WHERE Customer_ID = '"+storeData.user+"'";
         db.executeQuery(sql_up);
     }
-    public static void updateStatement_De(String de) {
+    public static void updateStatement_De(String de) 
+    {
         statementStoreNo();
         String sql_De = null;
         int cnt = 0;
@@ -90,7 +98,8 @@ public class getDB {
         }
         db.executeQuery(sql_De);
     }
-    public static void updateStatement_With(String wi) {
+    public static void updateStatement_With(String wi) 
+    {
         statementStoreNo();
         String sql_Wi = null;
         int cnt = 0;
@@ -107,4 +116,34 @@ public class getDB {
         }
         db.executeQuery(sql_Wi);
     }
+    public static void updateTran()
+    {
+         String sql_up = "UPDATE `ATM_Customer` "
+                + "SET Customer_Balance= '"+storeData.tranBal+"'"
+                + "WHERE Customer_ID = '"+storeData.tranID+"'";
+        db.executeQuery(sql_up);
+    }
+    public static boolean checkTranID(String tranID)
+    {
+        boolean output = false;
+        String sql = "SELECT * FROM `ATM_Customer` ";
+        ArrayList<HashMap> list = db.queryRows(sql);
+        for(HashMap l : list){
+            if(l.get("Customer_ID").equals(tranID))
+            {
+                    output = true;
+                    storeData.Trans((""+l.get("Customer_ID")), (""+l.get("Customer_Balance")));
+                    break;
+            }
+            else
+            {
+                    output = false;
+                   
+            }
+            
+           
+        }
+        return output;
+    }
 }
+
