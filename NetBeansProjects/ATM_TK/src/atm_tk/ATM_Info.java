@@ -271,9 +271,9 @@ public class ATM_Info extends javax.swing.JFrame {
 
     private void TransferMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TransferMouseClicked
         // TODO add your handling code here:
-        ATM_Transfer in = new ATM_Transfer();
+        /*ATM_Transfer in = new ATM_Transfer();
         in.setVisible(true);
-        this.dispose();
+        this.dispose();*/
     }//GEN-LAST:event_TransferMouseClicked
 
     private void TransferActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TransferActionPerformed
