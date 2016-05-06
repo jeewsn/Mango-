@@ -253,19 +253,26 @@ public class ATM_Deposit extends javax.swing.JFrame {
         int num1 = Integer.parseInt(storeData.balance); // set balance(String) convert to nums(int) 
         int num2 = 0; // set num2 = 0
         int change;
-        if(des2.getText().length()>=1 && des2.getText().length()<=10) { // des2 must have 1 to 10 length
+        if(des2.getText().length()>=1 && des2.getText().length()<=10) 
+        { // des2 must have 1 to 10 length
            num2 = Integer.parseInt(des2.getText());      // because int can get 10 digit of number (or) billion
           // get des2(text) text to num2
-        } else if(des2.getText().length() > 10) { // des2 length more than 10
+        }
+        else if(des2.getText().length() > 10) 
+        { // des2 length more than 10
            JOptionPane.showMessageDialog(null, "It's too much AMOUNT!!"); 
            des2.setText("");  
         }
         
-        if(num2==0) { // num2 equal 0 (or) num2 isn't declared by des2(text)
+        if(num2==0)
+        { // num2 equal 0 (or) num2 isn't declared by des2(text)
            JOptionPane.showMessageDialog(null, "Please insert MONEY!!");
            des2.setText("");
-        } else if(num2 <= 100000) { // num2 must lower equal 100,000
-            if(num2>0 && (num2%20==0||num2%50==0||num2%70==0)) { // if num2 inform of BANKNOTE 70 = 50 + 20
+        }
+        else if(num2 <= 100000)
+        { // num2 must lower equal 100,000
+            if(num2>0 && (num2%20==0||num2%50==0||num2%70==0)) 
+            { // if num2 inform of BANKNOTE 70 = 50 + 20
                 change = num2+ num1;
                 storeData.balance = Integer.toString(change);
                 getDB.updateDB();
@@ -277,11 +284,14 @@ public class ATM_Deposit extends javax.swing.JFrame {
                         + "\nBalance : " + storeData.balance +"\n");
                 in.setVisible(true);
                 this.dispose();
-            } else if(!(num2%20==0||num2%50==0||num2%70==0)){ // if NOT BANKNOTE!!
+            } 
+            else if(!(num2%20==0||num2%50==0||num2%70==0))
+            { // if NOT BANKNOTE!!
                 JOptionPane.showMessageDialog(null, "Plese insert correct money in the form of BANKNOTE!!");
                 des2.setText("");
             } 
-        } else { // more than 100,000 about(100,001 to billion)
+        } else 
+        { // more than 100,000 about(100,001 to billion)
             JOptionPane.showMessageDialog(null, "Cannot insert AMOUNT more than 100,000 Baht!!");
             des2.setText("");
         }

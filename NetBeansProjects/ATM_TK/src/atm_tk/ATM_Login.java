@@ -162,10 +162,14 @@ public class ATM_Login extends javax.swing.JFrame {
     }//GEN-LAST:event_InsertIDActionPerformed
 
     private void InsertPinKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_InsertPinKeyPressed
+        try{
         if(evt.getKeyCode()==KeyEvent.VK_ENTER) {
+            
             if(InsertID.getText().equals("Please Insert Your ID")||InsertID.getText().equals("")) {
                JOptionPane.showMessageDialog(null, "Please Insert Your ID");
             }
+            
+                    
             else if(!(InsertID.getText().equals("Please Insert Your ID")||InsertID.getText().equals(""))) {
                 if("Correct password".equals(d1.checkPassword(InsertID.getText(), InsertPin.getText()))) {
                    in.setVisible(true);
@@ -183,8 +187,12 @@ public class ATM_Login extends javax.swing.JFrame {
                 }
             }
         }
+        }catch(NumberFormatException e)
+        {
+        JOptionPane.showMessageDialog(null, "pls insert only");
+                }
     }//GEN-LAST:event_InsertPinKeyPressed
-// no action here
+// no action herenull
     private void InsertPinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InsertPinMouseClicked
       
     }//GEN-LAST:event_InsertPinMouseClicked
