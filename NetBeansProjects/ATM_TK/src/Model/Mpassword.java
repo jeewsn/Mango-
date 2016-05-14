@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View;
+package Model;
 
 /**
  *
  * @author halo
  */
-public class Vdeposit {
-    
+public class Mpassword 
+{
+    public Mpassword()
+    {
+    }
 }

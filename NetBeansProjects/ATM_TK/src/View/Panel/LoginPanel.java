@@ -19,7 +19,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class LoginPanel extends SuperPanel 
+public class LoginPanel extends SuperPanels 
 {
 	/**
 	 * 

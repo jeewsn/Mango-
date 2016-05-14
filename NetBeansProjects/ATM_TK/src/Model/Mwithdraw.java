@@ -9,6 +9,7 @@ package Model;
  *
  * @author halo
  */
-public class Mwithdraw {
+public class Mwithdraw 
+{
     
 }

@@ -26,8 +26,12 @@ public class MgetDB
             if(l.get("Customer_ID").equals(user)){
                 if(l.get("Customer_Pass").equals(password)){
                     output = "Correct password";
-                    mstoreData.info((""+l.get("Customer_ID")) , (""+l.get("Customer_Pass"))
-                                  ,(""+l.get("Customer_Name")), (""+l.get("Customer_Balance")));
+                   // mstoreData.info((""+l.get("Customer_ID")) , (""+l.get("Customer_Pass"))
+                   //               ,(""+l.get("Customer_Name")), (""+l.get("Customer_Balance")));
+                    mstoreData.setBalance((String) l.get("Customer_Balance"));
+                    mstoreData.setName((String) l.get("Customer_Name"));
+                    mstoreData.setUser((String) l.get("Customer_ID"));
+                    mstoreData.setPassword((String) l.get("Customer_Pass"));
                     break;
                 }
                 else{

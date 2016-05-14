@@ -14,7 +14,8 @@ public class MstoreData {
     private String name;
     private String no;
     private String no_each;
-    public MstoreData(String user,String password, String balance, String name)
+    public MstoreData(String user,String password,
+                        String balance, String name)
     {
         this.accNo=user;
         this.password=password;
@@ -22,24 +23,12 @@ public class MstoreData {
         this.name=name;
     
     }
-    public String getUser() {
-        return accNo;
-    }
-
-    public void setUser(String user) {
-        this.accNo = user;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
+    public String getUser() {    return accNo;}
+    public void setUser(String user) { this.accNo = user; }
+    public String getPassword() { return password; }
+    public void setPassword(String password) { this.password = password;}
     public String getBalance() {
-        return balance;
+    return balance;
     }
 
     public void setBalance(String balance) {

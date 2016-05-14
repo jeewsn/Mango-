@@ -303,7 +303,7 @@ public class ATM_Deposit extends javax.swing.JFrame {
     }//GEN-LAST:event_BackActionPerformed
 
     private void No1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_No1ActionPerformed
-        des2.setText(des2.getText()+1);
+         
     }//GEN-LAST:event_No1ActionPerformed
 
     private void No2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_No2ActionPerformed

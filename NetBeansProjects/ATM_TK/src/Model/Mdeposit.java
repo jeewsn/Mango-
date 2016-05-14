@@ -9,6 +9,9 @@ package Model;
  *
  * @author halo
  */
-public class Mdeposit {
-    
+public class Mdeposit 
+{
+    public Mdeposit()
+    {
+    }
 }
