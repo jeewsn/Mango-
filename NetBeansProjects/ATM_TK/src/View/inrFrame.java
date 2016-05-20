@@ -79,7 +79,8 @@ public class inrFrame extends JFrame
 		No9.addActionListener	(listener); No0.addActionListener	(listener);
 		Noreset.addActionListener(listener);Nodel.addActionListener	(listener);
 		Nodot.addActionListener	(listener); NoEnter.addActionListener	(listener);
-		NoBack.addActionListener(listener); topPanel.addListener(listener);
+		NoBack.addActionListener(listener); 
+                topPanel.addListener(listener);
 		 
 	}
 	public void changePanel(SuperPanels newtopPanel)

@@ -19,10 +19,10 @@ public class TransferPanel_getID extends SuperPanels
     {
         super();
 		JLabel user = new JLabel("Target Transfer ID");
-		JLabel password = new JLabel("Password");
+		//JLabel password = new JLabel("Password");
 		
 		user.setBounds		(50, 0 , 300, 50);
-		password.setBounds	(50,100, 300, 50);
+		//password.setBounds	(50,100, 300, 50);
 		TranIDField.setBounds	(50, 50, 300, 50);
 		//passField.setBounds	(50,150, 300, 50);
 		//ok.setBounds		(50,200, 300, 50);
@@ -41,4 +41,5 @@ public class TransferPanel_getID extends SuperPanels
     {
         return TranIDField.getText();
     }
+   
 }

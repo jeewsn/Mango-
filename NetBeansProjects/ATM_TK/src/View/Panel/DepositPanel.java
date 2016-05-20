@@ -8,7 +8,7 @@ import javax.swing.JTextField;
 public class DepositPanel extends SuperPanels
 {
     JTextField amountField= new JTextField();
-    JLabel deposit  = new JLabel();
+    JLabel deposit  = new JLabel("Deposit");
     public DepositPanel()
     {
         super();

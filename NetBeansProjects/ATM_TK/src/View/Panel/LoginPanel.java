@@ -45,32 +45,19 @@ public class LoginPanel extends SuperPanels
 		passField.setBounds	(50,150, 300, 50);
 		ok.setBounds		(50,200, 300, 50);
 		add(user);
-		//add(password);
+		add(password);
 		add(userField);
-		//add(passField);
+		add(passField);
 		
 		
 	}
 	public void setUser(String user)
-	{
-		userField.setText(user);  
-	}
-	public void setPass(String password)
-	{
-		passField.setText(password);
-	}
+	{   userField.setText(user);  }
 	public String getUser()
-	{
-		return (String )userField.getText();
-	}
-	public String getPassword()
-	{
-		return (String)passField.getText();
-	}
-	
-	public void addListener(ActionListener listenerForOKButton)
-	{
-		ok.addActionListener(listenerForOKButton);
-	}
+	{   return (String )userField.getText();}
+	   public void setPassword(String password)	
+        {   passField.setText(password);}
+        public String getPassword()
+        {    return passField.getText();}
 
 }

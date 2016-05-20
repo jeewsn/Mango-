@@ -27,11 +27,12 @@ public class LoginController
         this.theView.addListener(new listenerLogin());
         
     }
-    class listenerLogin implements ActionListener
+   class listenerLogin implements ActionListener
     {
 
         @Override
-        public void actionPerformed(ActionEvent e) {
+        public void actionPerformed(ActionEvent e) 
+        {
 		String command=e.getActionCommand();
 		System.out.println(command+"  Login Panel");
 		if(e.getActionCommand().equals("1"))
@@ -89,16 +90,17 @@ public class LoginController
 		else if(command.equals("del"))
 		{
                     String s = theView.getUserPanel();
-                    if(s.length()>=1) {
-		           theView.setUserPanel(s.substring(0,s.length()-1));
-		        }
-			}
-			else if(command.equals("reset"))
-			{
-				theView.setUserPanel("");
-			}
+                    if(s.length()>=1) 
+                    {
+                        theView.setUserPanel(s.substring(0,s.length()-1));
+		    }
 		}
-        }
+                else if(command.equals("reset"))
+		{
+				theView.setUserPanel("");
+		}
+	}
+    }
         
- }
+}
     

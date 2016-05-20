@@ -30,7 +30,7 @@ import javax.swing.table.DefaultTableModel;
  * @author www.codejava.net
  *
  */
-public class JTablePopupMenu extends JFrame implements ActionListener 
+public class ShowStatement extends JFrame implements ActionListener 
 {
 
 	private JTable table;
@@ -42,7 +42,7 @@ public class JTablePopupMenu extends JFrame implements ActionListener
 	private static String[][] results;
         private String [] colums;
 	
-	public JTablePopupMenu(String[] colums ,String[][] results) {
+	public ShowStatement(String[] colums ,String[][] results) {
 		super("JTable Popup Menu Example");
 		this.results=results;
                 this.colums=colums;
@@ -85,12 +85,12 @@ public class JTablePopupMenu extends JFrame implements ActionListener
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				new JTablePopupMenu(results).setVisible(true);
+				new ShowStatement(results).setVisible(true);
 			}
 		});
 	}
 
-    private JTablePopupMenu(String[][] results) {
+    private ShowStatement(String[][] results) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
