@@ -40,7 +40,7 @@ import View.Panel.SuperPanels;
                 System.out.println(command+"  Deposit Panel");
                 if(e.getActionCommand().equals("1"))
                     {
-                        theView.setUserPanel(theView.getAmountPanel()+"1");
+                        theView.setAmountPanel(theView.getAmountPanel()+"1");
                     }
                 else if(command.equals("Back"))
                     {
@@ -52,44 +52,44 @@ import View.Panel.SuperPanels;
                     }
                 else if(command.equals("2"))
                     {
-                        theView.setUserPanel(theView.getAmountPanel()+"2");				
+                        theView.setAmountPanel(theView.getAmountPanel()+"2");				
                     }
                 else if(command.equals("3"))
                     {
-                        theView.setUserPanel(theView.getAmountPanel()+"3");				
+                        theView.setAmountPanel(theView.getAmountPanel()+"3");				
                     }
                 else if(command.equals("4"))
                     {
-                        theView.setUserPanel(theView.getAmountPanel()+"4");				
+                        theView.setAmountPanel(theView.getAmountPanel()+"4");				
                     }
                 else if(command.equals("5"))
                     {
-                        theView.setUserPanel(theView.getAmountPanel()+"5");				
+                        theView.setAmountPanel(theView.getAmountPanel()+"5");				
                     }
                 else if(command.equals("6"))
                     {
-                        theView.setUserPanel(theView.getAmountPanel()+"6");				}
+                        theView.setAmountPanel(theView.getAmountPanel()+"6");				}
                 else if(command.equals("7"))
                     {
-                        theView.setUserPanel(theView.getAmountPanel()+"7");				}
+                        theView.setAmountPanel(theView.getAmountPanel()+"7");				}
                 else if(command.equals("8"))
                     {
-                        theView.setUserPanel(theView.getAmountPanel()+"8");				}
+                        theView.setAmountPanel(theView.getAmountPanel()+"8");				}
                 else if(command.equals("9"))
                     {
-                        theView.setUserPanel(theView.getAmountPanel()+"9");				}
+                        theView.setAmountPanel(theView.getAmountPanel()+"9");				}
                 else if(command.equals("0"))
                     {
-                        theView.setUserPanel(theView.getAmountPanel()+"0");				}
+                        theView.setAmountPanel(theView.getAmountPanel()+"0");				}
                 else if(command.equals("*"))
                     {
-                        theView.setUserPanel(theView.getAmountPanel()+"*");				}
+                        theView.setAmountPanel(theView.getAmountPanel()+"*");				}
                 else if(command.equals("#"))
                     {
-                        theView.setUserPanel(theView.getAmountPanel()+"#");				}
+                        theView.setAmountPanel(theView.getAmountPanel()+"#");				}
                 else if(command.equals("Dot"))
                     {
-                        theView.setUserPanel(theView.getAmountPanel()+".");				}
+                        theView.setAmountPanel(theView.getAmountPanel()+".");				}
                 
                 else if(command.equals("del"))
                     {

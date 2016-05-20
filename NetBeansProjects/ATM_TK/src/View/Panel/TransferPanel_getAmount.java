@@ -18,11 +18,11 @@ public class TransferPanel_getAmount extends SuperPanels
     public TransferPanel_getAmount()
     {
            super();
-		JLabel user = new JLabel("Target Transfer ID");
-		JLabel password = new JLabel("Password");
+		JLabel user = new JLabel("How amount of transfer");
+		//JLabel password = new JLabel("Password");
 		
 		user.setBounds		(50, 0 , 300, 50);
-		password.setBounds	(50,100, 300, 50);
+		//password.setBounds	(50,100, 300, 50);
 		amountField.setBounds	(50, 100, 300, 50);
 		//passField.setBounds	(50,150, 300, 50);
 		//ok.setBounds		(50,200, 300, 50);

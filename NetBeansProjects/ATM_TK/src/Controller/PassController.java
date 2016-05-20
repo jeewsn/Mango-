@@ -35,7 +35,7 @@ public class PassController
 		System.out.println(command+"  Login Panel");
 		if(e.getActionCommand().equals("1"))
 		{
-                    theView.setUserPanel(theView.getUserPanel()+"1");
+                    theView.setPasswordPanel(theView.getPasswordPanel()+"1");
 		}
                 else if(command.equals("Login")||command.equals("Enter"))
 		{
@@ -47,44 +47,44 @@ public class PassController
                 }
 		else if(command.equals("2"))
 		{
-                    theView.setUserPanel(theView.getUserPanel()+"2");				
+                    theView.setPasswordPanel(theView.getPasswordPanel()+"2");				
                 }
 		else if(command.equals("3"))
                 {
-                    theView.setUserPanel(theView.getUserPanel()+"3");				
+                    theView.setPasswordPanel(theView.getPasswordPanel()+"3");				
                 }
 		else if(command.equals("4"))
                 {
-                    theView.setUserPanel(theView.getUserPanel()+"4");				
+                    theView.setPasswordPanel(theView.getPasswordPanel()+"4");				
                 }
 		else if(command.equals("5"))
 		{
-                    theView.setUserPanel(theView.getUserPanel()+"5");				
+                    theView.setPasswordPanel(theView.getPasswordPanel()+"5");				
                 }
 		else if(command.equals("6"))
 		{
-                    theView.setUserPanel(theView.getUserPanel()+"6");				}
+                    theView.setPasswordPanel(theView.getPasswordPanel()+"6");				}
 		else if(command.equals("7"))
 		{
-                    theView.setUserPanel(theView.getUserPanel()+"7");				}
+                    theView.setPasswordPanel(theView.getPasswordPanel()+"7");				}
 		else if(command.equals("8"))
 		{
-                    theView.setUserPanel(theView.getUserPanel()+"8");				}
+                    theView.setPasswordPanel(theView.getPasswordPanel()+"8");				}
 		else if(command.equals("9"))
 		{
-                    theView.setUserPanel(theView.getUserPanel()+"9");				}
+                    theView.setPasswordPanel(theView.getPasswordPanel()+"9");				}
 		else if(command.equals("0"))
                 {
-                    theView.setUserPanel(theView.getUserPanel()+"0");				}
+                    theView.setPasswordPanel(theView.getPasswordPanel()+"0");				}
 		else if(command.equals("*"))
         	{
-                    theView.setUserPanel(theView.getUserPanel()+"*");				}
+                    theView.setPasswordPanel(theView.getPasswordPanel()+"*");				}
 		else if(command.equals("#"))
 		{
-                    theView.setUserPanel(theView.getUserPanel()+"#");				}
+                    theView.setPasswordPanel(theView.getPasswordPanel()+"#");				}
 		else if(command.equals("Dot"))
 		{
-                    theView.setUserPanel(theView.getUserPanel()+".");				}
+                    theView.setPasswordPanel(theView.getPasswordPanel()+".");				}
 				
 		
 		else if(command.equals("del"))

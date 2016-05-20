@@ -60,10 +60,6 @@ public class PasswordPanel extends SuperPanels
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
-    public void addListener(ActionListener listener)
-    {
-        
-    }
     public void setPassword(String password)	
     {
         passField.setText(password);

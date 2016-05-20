@@ -9,7 +9,7 @@ package Model;
  *
  * @author halo
  */
-public class Mpassword 
+public class Mpassword extends SuperModel
 {
     public Mpassword()
     {

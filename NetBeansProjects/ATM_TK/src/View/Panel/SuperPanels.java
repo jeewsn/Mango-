@@ -16,8 +16,7 @@ public class SuperPanels extends JPanel
 		this.setLayout(null);
 		
 	}
-	public void addListener(ActionListener listener)
-	{ }
+	public void addListener(ActionListener listener){ }
 	public void setUser(String user)	{	}
 	public void setBalance(String balance)	{	}
 	public void setID(String iD)	{	}

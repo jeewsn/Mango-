@@ -10,7 +10,7 @@ import edu.sit.cs.db.CSDbDelegate;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class MgetDB 
+public class MgetDB extends SuperModel
 {
     private CSDbDelegate db;
     private MstoreData mstoreData;

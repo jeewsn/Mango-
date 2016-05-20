@@ -9,6 +9,6 @@ package Model;
  *
  * @author halo
  */
-public class Mlogin {
+public class Mlogin extends SuperModel {
     
 }

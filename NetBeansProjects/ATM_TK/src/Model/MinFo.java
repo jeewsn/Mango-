@@ -9,6 +9,7 @@ package Model;
  *
  * @author halo
  */
-public class MinFo {
+public class MinFo extends SuperModel
+{
     
 }

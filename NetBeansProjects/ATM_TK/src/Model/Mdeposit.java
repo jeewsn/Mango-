@@ -9,9 +9,13 @@ package Model;
  *
  * @author halo
  */
-public class Mdeposit 
+public class Mdeposit extends SuperModel
 {
     public Mdeposit()
+    {
+        super();
+    }
+    public static void dep()
     {
     }
 }

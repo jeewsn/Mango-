@@ -21,9 +21,9 @@ public class WithdrawPanel extends SuperPanels
         
         super();
 		
-		JLabel withdraws = new JLabel("Withdraw");
+		JLabel withdraws = new JLabel("Withdraw put the Number in the blank");
 		
-		withdraws.setBounds		(50, 0 , 300, 50);
+		withdraws.setBounds	(50, 0 , 300, 50);
 		amountField.setBounds	(50,100, 300, 50);
 		add(withdraws);
 		//add(password);

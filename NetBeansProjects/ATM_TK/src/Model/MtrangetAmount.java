@@ -9,6 +9,7 @@ package Model;
  *
  * @author halo
  */
-public class Mtransfer extends SuperModel{
+public class MtrangetAmount extends SuperModel
+{
     
 }
