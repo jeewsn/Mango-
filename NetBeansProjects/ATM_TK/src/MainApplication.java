@@ -21,8 +21,8 @@ public class MainApplication
   
     public static void main(String[]args)
     {
-          //MstoreData storeDate = new MstoreData();
-        SuperPanels u = new DepositPanel();
-        inrFrame in = new inrFrame(u);
+        //MstoreData storeDate = new MstoreData();
+        //SuperPanels u = new DepositPanel();
+        //inrFrame in = new inrFrame(u);
     }
 }
