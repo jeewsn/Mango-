@@ -65,6 +65,9 @@ public class inrFrame extends JFrame
 		parent.add(NumButton);
 		this.add(parent);
 		System.out.println("Already create this"+title);
+                pack();
+                setLocationRelativeTo(null);
+                setResizable(false);
 	}
         public void setTitle(String title) {this.title = title;}
 	
