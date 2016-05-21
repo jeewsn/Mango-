@@ -1,5 +1,7 @@
-package View;
+package View.Panel;
 import View.Panel.SuperPanels;
+import java.awt.Color;
+import static java.awt.Color.white;
 import java.awt.ComponentOrientation;
 import java.awt.GridLayout;
 import java.awt.event.ActionListener;
@@ -9,15 +11,11 @@ import javax.swing.*;
  */
 public class inrFrame extends JFrame
 {
-    /*public inrFrame(SuperPanels topPanel)//,String title)
-	{
-		this.title=title;
-		this.topPanel=topPanel;
-		initComponent();
-	}	
+        private SuperPanels topPanel;
+        	
 	private JFrame aa = new JFrame();
-	private SuperPanels topPanel;
-	private String title ;
+	//private SuperPanels topPanel;
+	private String title ="1"+"2";
 	private JButton No1	= new JButton("1"),	No2	= new JButton("2"),
 			  No3	= new JButton("3"),	No4	= new JButton("4"),
 			  No5	= new JButton("5"),	No6	= new JButton("6"),
@@ -26,15 +24,23 @@ public class inrFrame extends JFrame
 			  Noreset = new JButton("reset"),Nodel= new JButton("del"),
 			  Nodot	= new JButton("Dot"),NoEnter = new JButton("Enter"),
 			  NoBack	= new JButton("Back");
-	public void setTitle(String title) {this.title = title;}
 	
+        public inrFrame(SuperPanels topPanel)//,String title)
+	{
+		this.title=title;
+		this.topPanel=topPanel;
+		initComponent();
+	}
 	public void initComponent()
 	{
-		aa.setTitle(title);
+                No1.setBackground(white);
+		this.setTitle(title);
 		System.out.println("already settitle");
 		JPanel NumButton = new JPanel();
-		this.setSize(400,800);
-			NumButton.setSize(400,400);
+                NumButton.setBackground(white);
+                NumButton.setBackground(Color.LIGHT_GRAY);
+		this.setSize(453,800);
+			NumButton.setSize(400,300);
 			NumButton.setLayout(new GridLayout(5, 3,2,2));
 			NumButton.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
                         
@@ -44,26 +50,28 @@ public class inrFrame extends JFrame
 			NumButton.add(No7); 	NumButton.add(No8);	NumButton.add(No9);
 			NumButton.add(Nodot);	NumButton.add(No0); 	NumButton.add(Nodel);
 			this.add(NumButton);
-			this.setSize(400, 400);
+			//this.setSize(400, 400);
 			this.setVisible(true);		
 			System.out.println("already create NumPanel");
 			
-		this.setSize(400,800);
+		this.setSize(453,800);
 		JPanel parent 		= new JPanel();
 		parent.setLayout(new GridLayout(2,0,5,5));
 		parent.setSize(400,800);
-		aa.setVisible(true);
-		aa.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		aa.setSize(400,800);
-		parent.add(topPanel);
+		this.setVisible(true);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setSize(453,800);
+		parent.add(this.topPanel);
 		parent.add(NumButton);
-		aa.add(parent);
+		this.add(parent);
 		System.out.println("Already create this"+title);
 	}
+        public void setTitle(String title) {this.title = title;}
+	
 	public void closeFrame()
 	{
 		System.out.println("already dispose");
-		aa.dispose();
+		this.dispose();
 	}
 	public void showMessage(String word)
 	{
@@ -86,7 +94,7 @@ public class inrFrame extends JFrame
 	public void changePanel(SuperPanels newtopPanel)
 	{
 		this.topPanel=newtopPanel;
-		aa.removeAll();
+		this.removeAll();
 		initComponent();
 		
 	}
@@ -101,8 +109,9 @@ public class inrFrame extends JFrame
 	public void setIdPanel(String id)		{topPanel.setID(id);}
 	public String getTranIDPanel()			{return topPanel.getTranID();}
 	public void setTranIDPanel(String traniD)	{topPanel.setTranID(traniD);}
-	public String getAmountPanel()		{return topPanel.getAmount();}
-	public void setAmountPanel(String text)	{topPanel.setAmount(text);}
+	public String getAmountPanel()                  {return topPanel.getAmount();}
+	public void setAmountPanel(String text)         {topPanel.setAmount(text);}
 	public int getFocus()                           {return topPanel.getFocus();}
-	*/
+ 
+	
 }
