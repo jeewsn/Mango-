@@ -9,6 +9,8 @@ package Model;
  *
  * @author Tuk
  */
-public class MLogin {
-    
+interface MTransaction {
+    String doTransaction(String balance, String amount);
+    void updateBalance(String accNo, String balance);
+    void updateStatement(String accNo, String amount);
 }

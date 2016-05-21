@@ -5,10 +5,21 @@
  */
 package Model;
 
+import edu.sit.cs.db.CSDbDelegate;
+
 /**
  *
  * @author Tuk
  */
 public class MGetDB {
-    
+    CSDbDelegate db;
+    public void connect() 
+    {
+        db = new CSDbDelegate ("localhost","3306","test","root","");
+        db.connect();
+    }
+    public void disconnect()
+    {
+        db.disconnect();
+    }
 }

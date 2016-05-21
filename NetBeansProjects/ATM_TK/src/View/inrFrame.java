@@ -9,7 +9,7 @@ import javax.swing.*;
  */
 public class inrFrame extends JFrame
 {
-    public inrFrame(SuperPanels topPanel)//,String title)
+    /*public inrFrame(SuperPanels topPanel)//,String title)
 	{
 		this.title=title;
 		this.topPanel=topPanel;
@@ -104,5 +104,5 @@ public class inrFrame extends JFrame
 	public String getAmountPanel()		{return topPanel.getAmount();}
 	public void setAmountPanel(String text)	{topPanel.setAmount(text);}
 	public int getFocus()                           {return topPanel.getFocus();}
-	
+	*/
 }
