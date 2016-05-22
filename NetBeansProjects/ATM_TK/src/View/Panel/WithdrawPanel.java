@@ -35,10 +35,12 @@ public class WithdrawPanel extends SuperPanels
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabel1.setText("Withdraw");
 
         amountField.setPreferredSize(new java.awt.Dimension(6, 22));
+        amountField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        amountField.setFont(new java.awt.Font("Tahoma", 0, 18));
        
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

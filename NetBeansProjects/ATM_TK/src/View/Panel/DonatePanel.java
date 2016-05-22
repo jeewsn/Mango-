@@ -37,6 +37,8 @@ public class DonatePanel extends SuperPanels
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         AmountField = new javax.swing.JTextField();
+        AmountField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        AmountField.setFont(new java.awt.Font("Tahoma", 0, 18));
         jComboBox1 = new javax.swing.JComboBox<>();
 
         jCheckBoxMenuItem1.setSelected(true);
@@ -44,10 +46,10 @@ public class DonatePanel extends SuperPanels
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         jLabel1.setText("Donation Foundation");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         jLabel2.setText("Amount");
 
         AmountField.setPreferredSize(new java.awt.Dimension(6, 22));
@@ -64,9 +66,9 @@ public class DonatePanel extends SuperPanels
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(AmountField, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
+                        .addGap(30, 30, 30)
                         .addComponent(jLabel2)))
-                .addGap(130, 130, 130))
+                .addGap(140, 140, 140))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(114, 114, 114)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)

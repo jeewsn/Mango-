@@ -52,13 +52,14 @@ public class LoginPanel extends SuperPanels
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jTextField2.setBackground(new java.awt.Color(204, 204, 204));
         jTextField2.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField2.setText("Username");
-       
+        jTextField2.setText("");
+        jTextField2.setFont(new java.awt.Font("Arial", 0, 18));
 
         jPasswordField1.setBackground(new java.awt.Color(204, 204, 204));
         jPasswordField1.setForeground(new java.awt.Color(255, 255, 255));
-        jPasswordField1.setText("jPasswordField1");
-
+        jPasswordField1.setText("");
+        jPasswordField1.setFont(new java.awt.Font("Arial", 0, 18));
+        
         Label_Login.setBackground(new java.awt.Color(0, 51, 255));
         Label_Login.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         Label_Login.setText("LOGIN:");

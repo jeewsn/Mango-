@@ -29,6 +29,8 @@ public class TransferPanel extends SuperPanels
         TargetIDField = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         AmountField = new javax.swing.JTextField();
+        AmountField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        AmountField.setFont(new java.awt.Font("Tahoma", 0, 18));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -36,7 +38,8 @@ public class TransferPanel extends SuperPanels
         jLabel1.setText("Transfer ID");
 
         TargetIDField.setPreferredSize(new java.awt.Dimension(6, 22));
-       
+        TargetIDField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TargetIDField.setFont(new java.awt.Font("Tahoma", 0, 18));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel2.setText("Transfer Amount");

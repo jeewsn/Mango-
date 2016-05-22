@@ -94,8 +94,13 @@ public class InfoPanel extends SuperPanels
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setText("Balance");
 
-       
-
+        Text_ID.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Text_ID.setFont(new java.awt.Font("Tahoma", 0, 18));
+        Text_Name.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Text_Name.setFont(new java.awt.Font("Tahoma", 0, 18));
+        Balance.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Balance.setFont(new java.awt.Font("Tahoma", 0, 18));
+         
         Withdraw.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         Withdraw.setText("Withdraw");
     
@@ -122,8 +127,9 @@ public class InfoPanel extends SuperPanels
                             .addComponent(Balance)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
+                        .addGap(0, 0, 0)
                         .addComponent(Withdraw)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(0, 0, 0)
                         .addComponent(Deposit)
                         .addGap(0, 0, 0)
                         .addComponent(Transfer)
@@ -133,7 +139,8 @@ public class InfoPanel extends SuperPanels
                 .addComponent(LogoutBT))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(DonateBT, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(DonateBT, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -194,7 +201,29 @@ public class InfoPanel extends SuperPanels
         }
 	public void setBalance(String balance)	
         {
-            Balance.setText(balance);
+            int i = 0;
+            String s = "";
+            // Delete DOT .
+            while( i < balance.length())
+            {
+                if(balance.charAt(i)=='.'){ break; }
+                else
+                {
+                    s += balance.charAt(i);
+                }
+                i++;
+            }
+            // Add , 
+            String t = ""; 
+            int cnt = 0;
+            for(i = s.length()-1;i>=0;i--,cnt++) {
+            if(cnt==3) {
+               t = "," + t;
+               cnt=0;
+            }
+            t = s.charAt(i)+t;
+            }
+            Balance.setText(t);
         }
 	public void setID(String iD)            
         {

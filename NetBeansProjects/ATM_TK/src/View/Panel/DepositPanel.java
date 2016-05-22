@@ -22,9 +22,11 @@ public class DepositPanel extends SuperPanels
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         amountField = new javax.swing.JTextField();
+        amountField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        amountField.setFont(new java.awt.Font("Tahoma", 0, 18));
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(453, 400));
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 22)); // NOI18N
         jLabel1.setText("Deposit");
         amountField.setBackground(new java.awt.Color(102, 255, 102));
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -37,7 +39,7 @@ public class DepositPanel extends SuperPanels
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(38, 38, 38)))
-                .addGap(130, 130, 130))
+                .addGap(150, 150, 150))
         );
         jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
