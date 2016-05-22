@@ -100,7 +100,7 @@ public class LoginController
                     System.out.println("Controller.LoginController.listenerLogin.actionPerformed()");
                     if(aa.equals("Correct password"))
                     {
-                           System.out.println("1");
+                         System.out.println("1");
                          String accNo=theModel.getAccNo();
                          String name = theModel.getName();
                          String balance= theModel.getBalance();
@@ -116,7 +116,7 @@ public class LoginController
                     else if(aa.equals("Wrong User"))
                             
                     {
-                            System.out.println("3");
+                        System.out.println("3");
                         theView.showMessage(aa);
                     }
                    
